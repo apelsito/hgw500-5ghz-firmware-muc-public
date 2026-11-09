@@ -1,0 +1,132 @@
+; Ghidra ARC instruction reconstruction. Addresses and bytes are preserved below.
+; function FUN_ram_0012f818 entry ram:0012f818
+ram:0012f818	e41c48b3	st.aw r13,[sp,-0x1c]
+ram:0012f81c	041cc037	st blink,[sp,0x4]
+ram:0012f820	42c6	st_s r14,[sp,0x8]
+ram:0012f822	43c7	st_s r15,[sp,0xc]
+ram:0012f824	101c0034	st r16,[sp,0x10]
+ram:0012f828	141c4034	st r17,[sp,0x14]
+ram:0012f82c	181c8034	st r18,[sp,0x18]
+ram:0012f830	a2c1	sub_s sp,sp,0x8
+ram:0012f832	1c101100	ld r17,[r0,0x1c]
+ram:0012f836	2877	mov_s r15,r1
+ram:0012f838	30218e2f0000203b	ld r14,[r17, 0x3b20]
+ram:0012f840	0021912f0000e437	add r17,r17,0x37e4
+ram:0012f848	64118900	ldb r9,[r1,0x64]
+ram:0012f84c	00110d00	ld r13,[r1]
+ram:0012f850	4c210090	cmp r9,0x0
+ram:0012f854	ca246200	mov.ne r4,0x1
+ram:0012f858	34002200	bne.d 0x0012f88c
+ram:0012f85c	ca226200	_mov.ne r2,0x1
+ram:0012f860	34278a1f0000c403	ldh r10,[r15, 0x3c4]
+ram:0012f868	402a0a14	asl r10,r10,0x10
+ram:0012f86c	3427881f0000c203	ldh r8,[r15, 0x3c2]
+ram:0012f874	05208812	or r8,r8,r10
+ram:0012f878	5120c092	btst r8,0xb
+ram:0012f87c	4a240000	mov r4,0x0
+ram:0012f880	ca220101	mov.eq r2,r4
+ram:0012f884	ca226200	mov.ne r2,0x1
+ram:0012f888	ca242200	mov.ne r4,0x0
+ram:0012f88c	3227811f00007c06	ldb r1,[r15, 0x67c]
+ram:0012f894	c970	mov_s r0,r14
+ram:0012f896	01db	mov_s r3,0x1
+ram:0012f898	4a25c000	mov r5,0x3
+ram:0012f89c	2220800f0f005cb8	jl 0x000fb85c
+ram:0012f8a4	00168770180011c1	ldb r7,[0x18c111]
+ram:0012f8ac	0027901f0000f405	add r16,r15,0x5f4
+ram:0012f8b4	4c270080	cmp r7,0x0
+ram:0012f8b8	bef2	beq_s 0x0012fa34
+ram:0012f8ba	2c158610	ldb r6,[r13,0x2c]
+ram:0012f8be	4c264080	cmp r6,0x1
+ram:0012f8c2	baf4	bne_s 0x0012fa34
+ram:0012f8c4	89108520	ldb r5,[r16,0x89]
+ram:0012f8c8	8c25c38f	cmp r5,0xff
+ram:0012f8cc	b4f4	bne_s 0x0012fa34
+ram:0012f8ce	8b70	mov_s r0,sp
+ram:0012f8d0	0027921f00009600	add r18,r15,0x96
+ram:0012f8d8	15081e00	bbit0 r0,0x0,0x0012f8ec
+ram:0012f8dc	4a71	mov_s r1,r18
+ram:0012f8de	06da	mov_s r2,0x6
+ram:0012f8e0	2220800f390000fe	jl 0x0039fe00
+ram:0012f8e8	1d000000	b 0x0012f904
+ram:0012f8ec	f10a1fa0	bbit1 r18,0x0,0x0012f8dc
+ram:0012f8f0	96170411	ldh r4,[r15,0x96]
+ram:0012f8f4	00180401	sth r4,[r0]
+ram:0012f8f8	98170311	ldh r3,[r15,0x98]
+ram:0012f8fc	61b0	stw_s r3,[r0,0x2]
+ram:0012f8fe	9a170211	ldh r2,[r15,0x9a]
+ram:0012f902	42b0	stw_s r2,[r0,0x4]
+ram:0012f904	20c3	ldb_s r3,[sp,0x0]
+ram:0012f906	80bb	bset_s r3,r3,0x0
+ram:0012f908	60c3	stb_s r3,[sp,0x0]
+ram:0012f90a	cf110026	ld.as r0,[r17,0xcf]
+ram:0012f90e	3227811f0000670d	ldb r1,[r15, 0xd67]
+ram:0012f916	2220800f0f00e4b0	jl 0x000fb0e4
+ram:0012f91e	8c20c38f	cmp r0,0xff
+ram:0012f922	8af2	beq_s 0x0012fa34
+ram:0012f924	0a210027	mov r17,sp
+ram:0012f928	a971	mov_s r1,r13
+ram:0012f92a	2a72	mov_s r2,r17
+ram:0012f92c	2220800f1300e0b5	jl 0x0013b5e0
+ram:0012f934	0a210000	mov r1,r0
+ram:0012f938	64178710	ldb r7,[r15,0x64]
+ram:0012f93c	89180220	stb r0,[r16,0x89]
+ram:0012f940	4c270080	cmp r7,0x0
+ram:0012f944	ca246200	mov.ne r4,0x1
+ram:0012f948	34002200	bne.d 0x0012f97c
+ram:0012f94c	ca226200	_mov.ne r2,0x1
+ram:0012f950	34278b1f0000c403	ldh r11,[r15, 0x3c4]
+ram:0012f958	402b0b14	asl r11,r11,0x10
+ram:0012f95c	3427861f0000c203	ldh r6,[r15, 0x3c2]
+ram:0012f964	0526c602	or r6,r6,r11
+ram:0012f968	5126c082	btst r6,0xb
+ram:0012f96c	4a240000	mov r4,0x0
+ram:0012f970	ca220101	mov.eq r2,r4
+ram:0012f974	ca226200	mov.ne r2,0x1
+ram:0012f978	ca242200	mov.ne r4,0x0
+ram:0012f97c	c970	mov_s r0,r14
+ram:0012f97e	01db	mov_s r3,0x1
+ram:0012f980	4a25c000	mov r5,0x3
+ram:0012f984	2220800f0f005cb8	jl 0x000fb85c
+ram:0012f98c	64178510	ldb r5,[r15,0x64]
+ram:0012f990	190d1000	breq r5,0x0,0x0012f9a8
+ram:0012f994	3d0d1000	breq r5,0x0,0x0012f9d0
+ram:0012f998	0a22800f1c003c43	mov r2,0x1c433c
+ram:0012f9a0	3d002000	b.d 0x0012f9dc
+ram:0012f9a4	4a244000	_mov r4,0x1
+ram:0012f9a8	3427801f0000c403	ldh r0,[r15, 0x3c4]
+ram:0012f9b0	10b8	asl_s r0,r0,0x10
+ram:0012f9b2	3427881f0000c203	ldh r8,[r15, 0x3c2]
+ram:0012f9ba	05200810	or r8,r8,r0
+ram:0012f9be	d908df92	bbit1 r8,0xb,0x0012f994
+ram:0012f9c2	cf721c004443	mov_s r2,0x1c4344
+ram:0012f9c8	15002000	b.d 0x0012f9dc
+ram:0012f9cc	4a240000	_mov r4,0x0
+ram:0012f9d0	4a240000	mov r4,0x0
+ram:0012f9d4	0a22800f1c003c43	mov r2,0x1c433c
+ram:0012f9dc	cf701c004c43	mov_s r0,0x1c434c
+ram:0012f9e2	2a71	mov_s r1,r17
+ram:0012f9e4	01db	mov_s r3,0x1
+ram:0012f9e6	4a25c000	mov r5,0x3
+ram:0012f9ea	2220800f0e0060e2	jl 0x000ee260
+ram:0012f9f2	2386	ld_s r1,[r14,0xc]
+ram:0012f9f4	c970	mov_s r0,r14
+ram:0012f9f6	3021840f00001030	ld r4,[r1, 0x3010]
+ram:0012f9fe	00218c0f00001030	add r12,r1,0x3010
+ram:0012fa06	4a71	mov_s r1,r18
+ram:0012fa08	50240404	bclr r4,r4,0x10
+ram:0012fa0c	001c0011	st r4,[r12]
+ram:0012fa10	2220800f1000b43f	jl 0x00103fb4
+ram:0012fa18	0c160910	ld r9,[r14,0xc]
+ram:0012fa1c	0a20800f1c008043	mov r0,0x1c4380
+ram:0012fa24	3021811f00001030	ld r1,[r9, 0x3010]
+ram:0012fa2c	2220800f0e0060e2	jl 0x000ee260
+ram:0012fa34	a2c0	add_s sp,sp,0x8
+ram:0012fa36	04141f30	ld blink,[sp,0x4]
+ram:0012fa3a	02c6	ld_s r14,[sp,0x8]
+ram:0012fa3c	03c7	ld_s r15,[sp,0xc]
+ram:0012fa3e	10141030	ld r16,[sp,0x10]
+ram:0012fa42	14141130	ld r17,[sp,0x14]
+ram:0012fa46	18141230	ld r18,[sp,0x18]
+ram:0012fa4a	e07f	j_s.d [blink]
+ram:0012fa4c	1c140d34	_ld.ab r13,[sp,0x1c]

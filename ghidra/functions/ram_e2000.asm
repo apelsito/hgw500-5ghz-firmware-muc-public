@@ -1,0 +1,13 @@
+; Ghidra ARC instruction reconstruction. Addresses and bytes are preserved below.
+; function FUN_ram_000e2000 entry ram:000e2000
+ram:000e2000	2508850f00800000	brhs r0,0x80000000,0x000e2024
+ram:000e2008	3108840f00080000	brlo r0,0x8000000,0x000e2038
+ram:000e2010	0c20808f00c00000	cmp r0,0xc0000000
+ram:000e2018	e020c607	jnc [blink]
+ram:000e201c	2120c007	j.d [blink]
+ram:000e2020	4a200000	_mov r0,0x0
+ram:000e2024	e508858f08800000	brhs r0,0x80080000,0x000e2008
+ram:000e202c	0220800f00200000	sub r0,r0,0x20000000
+ram:000e2034	2020c007	j [blink]
+ram:000e2038	c77000400000	add_s r0,r0,0x40000000
+ram:000e203e	e07e	j_s [blink]

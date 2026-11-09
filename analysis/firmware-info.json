@@ -1,0 +1,14 @@
+{
+  "magic_hex": "4657494e464f0000",
+  "magic_ascii": "FWINFO",
+  "type": 1,
+  "version_hex": "0x25040059",
+  "version_bytes": [
+    37,
+    4,
+    0,
+    89
+  ],
+  "file_offset": 848,
+  "virtual_address": "0xffff0000"
+}

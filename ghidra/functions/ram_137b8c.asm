@@ -1,0 +1,82 @@
+; Ghidra ARC instruction reconstruction. Addresses and bytes are preserved below.
+; function FUN_ram_00137b8c entry ram:00137b8c
+ram:00137b8c	ec1c48b3	st.aw r13,[sp,-0x14]
+ram:00137b90	041cc037	st blink,[sp,0x4]
+ram:00137b94	42c6	st_s r14,[sp,0x8]
+ram:00137b96	43c7	st_s r15,[sp,0xc]
+ram:00137b98	101c0034	st r16,[sp,0x10]
+ram:00137b9c	1a70	mov_s r16,r0
+ram:00137b9e	0a20801f0380008f	mov r8,0x80038f00
+ram:00137ba6	00208c0f0000083a	add r12,r0,0x3a08
+ram:00137bae	001c0012	st r8,[r12]
+ram:00137bb2	0a26800f03800070	mov r6,0x80037000
+ram:00137bba	00208c1f00002407	add r12,r8,0x724
+ram:00137bc2	001c8011	st r6,[r12]
+ram:00137bc6	3020870f0000083a	ld r7,[r0, 0x3a08]
+ram:00137bce	0a25800f0380ec73	mov r5,0x800373ec
+ram:00137bd6	00278c0f00002807	add r12,r7,0x728
+ram:00137bde	001c4011	st r5,[r12]
+ram:00137be2	3020850f0000083a	ld r5,[r0, 0x3a08]
+ram:00137bea	0a24800f0380c075	mov r4,0x800375c0
+ram:00137bf2	00258c0f00002c07	add r12,r5,0x72c
+ram:00137bfa	001c0011	st r4,[r12]
+ram:00137bfe	3020860f0000083a	ld r6,[r0, 0x3a08]
+ram:00137c06	cf730380f477	mov_s r3,0x800377f4
+ram:00137c0c	00268c0f00003007	add r12,r6,0x730
+ram:00137c14	60a4	st_s r3,[r12,0x0]
+ram:00137c16	3020870f0000083a	ld r7,[r0, 0x3a08]
+ram:00137c1e	cf720380e079	mov_s r2,0x800379e0
+ram:00137c24	00278c0f00003407	add r12,r7,0x734
+ram:00137c2c	40a4	st_s r2,[r12,0x0]
+ram:00137c2e	3020880f0000083a	ld r8,[r0, 0x3a08]
+ram:00137c36	cf71036000b4	mov_s r1,0x6003b400
+ram:00137c3c	00208c1f00003807	add r12,r8,0x738
+ram:00137c44	20a4	st_s r1,[r12,0x0]
+ram:00137c46	3020892f0000083a	ld r9,[r16, 0x3a08]
+ram:00137c4e	cf70036004b4	mov_s r0,0x6003b404
+ram:00137c54	00218c1f00003c07	add r12,r9,0x73c
+ram:00137c5c	00a4	st_s r0,[r12,0x0]
+ram:00137c5e	30208a2f0000083a	ld r10,[r16, 0x3a08]
+ram:00137c66	00208b2f00003040	add r11,r16,0x4030
+ram:00137c6e	07d9	mov_s r1,0x7
+ram:00137c70	8a200a06	mov r0,0x298
+ram:00137c74	00228c1f00004007	add r12,r10,0x740
+ram:00137c7c	001cc012	st r11,[r12]
+ram:00137c80	0eb9	asl_s r1,r1,0xe
+ram:00137c82	0eda	mov_s r2,0xe
+ram:00137c84	2220800f1700e011	jl 0x001711e0
+ram:00137c8c	cf771800c4c1	mov_s r15,0x18c1c4
+ram:00137c92	08af	stb_s r0,[r15,0x8]
+ram:00137c94	8a200a08	mov r0,0x2a0
+ram:00137c98	0cd9	mov_s r1,0xc
+ram:00137c9a	02de	mov_s r14,0x2
+ram:00137c9c	c972	mov_s r2,r14
+ram:00137c9e	2220800f1700e011	jl 0x001711e0
+ram:00137ca6	00dd	mov_s r13,0x0
+ram:00137ca8	09af	stb_s r0,[r15,0x9]
+ram:00137caa	aaaf	stb_s r13,[r15,0xa]
+ram:00137cac	a3a7	st_s r13,[r15,0xc]
+ram:00137cae	0a24800f2000f8fc	mov r4,0x20fcf8
+ram:00137cb6	001c8003	st r14,[r4]
+ram:00137cba	55244005	add2 r0,r4,0x15
+ram:00137cbe	a971	mov_s r1,r13
+ram:00137cc0	20da	mov_s r2,0x20
+ram:00137cc2	2220800f0e0080ea	jl 0x000eea80
+ram:00137cca	cf731300089a	mov_s r3,0x139a08
+ram:00137cd0	8a200f0a	mov r0,0x3e8
+ram:00137cd4	0a71	mov_s r1,r16
+ram:00137cd6	a972	mov_s r2,r13
+ram:00137cd8	4a24c000	mov r4,0x3
+ram:00137cdc	2220800f0f00107c	jl 0x000f7c10
+ram:00137ce4	cf731300fca6	mov_s r3,0x13a6fc
+ram:00137cea	01d8	mov_s r0,0x1
+ram:00137cec	0a71	mov_s r1,r16
+ram:00137cee	a972	mov_s r2,r13
+ram:00137cf0	4a24c000	mov r4,0x3
+ram:00137cf4	2220800f0f00107c	jl 0x000f7c10
+ram:00137cfc	04141f30	ld blink,[sp,0x4]
+ram:00137d00	02c6	ld_s r14,[sp,0x8]
+ram:00137d02	03c7	ld_s r15,[sp,0xc]
+ram:00137d04	10141030	ld r16,[sp,0x10]
+ram:00137d08	2120c007	j.d [blink]
+ram:00137d0c	14140d34	_ld.ab r13,[sp,0x14]

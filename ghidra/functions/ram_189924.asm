@@ -1,0 +1,27 @@
+; Ghidra ARC instruction reconstruction. Addresses and bytes are preserved below.
+; function FUN_ram_00189924 entry ram:00189924
+ram:00189924	2509310a	brne.d r1,0x28,0x00189948
+ram:00189928	4a260000	_mov r6,0x0
+ram:0018992c	4a244000	mov r4,0x1
+ram:00189930	80e0	cmp_s r0,0x0
+ram:00189932	ca210101	mov.eq r1,r4
+ram:00189936	ca218201	mov.ne r1,r6
+ram:0018993a	0a25800f09e60002	mov r5,0xe6090200
+ram:00189942	921d5800	st.as r1,[r5,0x92]
+ram:00189946	e07e	j_s [blink]
+ram:00189948	d0e1	cmp_s r1,0x50
+ram:0018994a	e07d	jne_s [blink]
+ram:0018994c	1d081100	brne r0,0x0,0x00189968
+ram:00189950	4a264000	mov r6,0x1
+ram:00189954	4a220000	mov r2,0x0
+ram:00189958	cf7309e60002	mov_s r3,0xe6090200
+ram:0018995e	921b9800	st.as r2,[r3,0x92]
+ram:00189962	e11b9801	st.as r6,[r3,0xe1]
+ram:00189966	e07e	j_s [blink]
+ram:00189968	4c204080	cmp r0,0x1
+ram:0018996c	ec07e1ff	beq.d 0x00189958
+ram:00189970	ca226100	_mov.eq r2,0x1
+ram:00189974	e1089180	brne r0,0x2,0x00189954
+ram:00189978	4a224000	mov r2,0x1
+ram:0018997c	dd07efff	b.d 0x00189958
+ram:00189980	0a268000	_mov r6,r2

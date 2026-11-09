@@ -1,0 +1,2 @@
+file_offset	virtual_address	hex_bytes	ascii
+0x350	0xffff0000	46 57 49 4e 46 4f 00 00 01 00 00 00 59 00 04 25	FWINFO......Y..%

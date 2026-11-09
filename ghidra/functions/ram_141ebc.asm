@@ -1,0 +1,67 @@
+; Ghidra ARC instruction reconstruction. Addresses and bytes are preserved below.
+; function FUN_ram_00141ebc entry ram:00141ebc
+ram:00141ebc	30208a0f0000c804	ld r10,[r0, 0x4c8]
+ram:00141ec4	3220870f00008306	ldb r7,[r0, 0x683]
+ram:00141ecc	0c100801	ldh r8,[r0,0xc]
+ram:00141ed0	32208b0f00008206	ldb r11,[r0, 0x682]
+ram:00141ed8	bd08be13	bbit0.d r8,0xe,0x00141f94
+ram:00141edc	10128910	_ldb r9,[r10,0x10]
+ram:00141ee0	0a25800f1a00d490	mov r5,0x1a90d4
+ram:00141ee8	9925c10f	sub3 r5,r5,0x7f
+ram:00141eec	00214911	add r9,r9,r5
+ram:00141ef0	3221851f00007c03	ldb r5,[r9, 0x37c]
+ram:00141ef8	490d9e01	bbit0 r5,0x6,0x00141f40
+ram:00141efc	50258401	bclr r4,r5,0x6
+ram:00141f00	42230390	sub.f r3,r11,0x0
+ram:00141f04	ca236200	mov.ne r3,0x1
+ram:00141f08	1a27820f0000b000	mpy r2,r7,0xb0
+ram:00141f10	1523c100	add2 r1,r3,r3
+ram:00141f14	40244408	add r4,r4,0x21
+ram:00141f18	347b	add1_s r3,r3,r1
+ram:00141f1a	336b	asl_s r1,r3,0x3
+ram:00141f1c	5961	add_s r1,r1,r2
+ram:00141f1e	c7711a00ac9e	add_s r1,r1,0x1a9eac
+ram:00141f24	190c7408	brlo.d r4,0x21,0x00141f3c
+ram:00141f28	57214608	_sub1 r6,r1,0x21
+ram:00141f2c	8c240183	cmp r4,0x4c
+ram:00141f30	06f7	bhi_s 0x00141f3c
+ram:00141f32	14260601	add1 r6,r6,r4
+ram:00141f36	00160001	ldh r0,[r6]
+ram:00141f3a	e07e	j_s [blink]
+ram:00141f3c	0091	ldw_s r0,[r1,0x0]
+ram:00141f3e	e07e	j_s [blink]
+ram:00141f40	422d0a01	asr r10,r5,0x4
+ram:00141f44	402f8801	asl r8,r7,0x6
+ram:00141f48	42230b90	sub.f r11,r11,0x0
+ram:00141f4c	ca236210	mov.ne r11,0x1
+ram:00141f50	15200812	add2 r8,r8,r8
+ram:00141f54	402b4b11	asl r11,r11,0x5
+ram:00141f58	5325c500	bmsk r5,r5,0x3
+ram:00141f5c	1523c912	add2 r9,r11,r11
+ram:00141f60	53224a10	bmsk r10,r10,0x1
+ram:00141f64	00204812	add r8,r8,r9
+ram:00141f68	402a8910	asl r9,r10,0x2
+ram:00141f6c	15214912	add2 r9,r9,r9
+ram:00141f70	00204812	add r8,r8,r9
+ram:00141f74	0020881f1a002c97	add r8,r8,0x1a972c
+ram:00141f7c	110d9502	brhs r5,0xa,0x00141f8c
+ram:00141f80	14204811	add1 r8,r8,r5
+ram:00141f84	00100011	ldh r0,[r8]
+ram:00141f88	2020c007	j [blink]
+ram:00141f8c	00100011	ldh r0,[r8]
+ram:00141f90	2020c007	j [blink]
+ram:00141f94	42270780	sub.f r7,r7,0x0
+ram:00141f98	ca276200	mov.ne r7,0x1
+ram:00141f9c	42230b90	sub.f r11,r11,0x0
+ram:00141fa0	ca236210	mov.ne r11,0x1
+ram:00141fa4	1a278a0f00003401	mpy r10,r7,0x134
+ram:00141fac	9a238216	mpy r11,r11,0x9a
+ram:00141fb0	8c214193	cmp r9,0x4d
+ram:00141fb4	0022ca12	add r10,r10,r11
+ram:00141fb8	00228a1f1a005c92	add r10,r10,0x1a925c
+ram:00141fc0	46f7	bhs_s 0x00141fcc
+ram:00141fc2	14224a12	add1 r10,r10,r9
+ram:00141fc6	00120011	ldh r0,[r10]
+ram:00141fca	e07e	j_s [blink]
+ram:00141fcc	00120011	ldh r0,[r10]
+ram:00141fd0	e07e	j_s [blink]

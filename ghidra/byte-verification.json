@@ -1,0 +1,27 @@
+{
+  "schema": "openmitrastar.ghidra-quantenna-export-verification/v1",
+  "role": "muc",
+  "original_filename": "qtn_driver.qtn_ruby.0.bin",
+  "original_bytes": 1094927,
+  "original_sha256": "71dcd32849f122c09397490914227af6f77e51c34d15615028faa3d0fabb0fe4",
+  "original_filebytes_verified": [
+    "original-file-0.bin",
+    "original-file-1.bin"
+  ],
+  "original_entire_file_preserved": true,
+  "source_ranges_verified": 8,
+  "unique_input_bytes_mapped": 1094587,
+  "instructions": 110398,
+  "file_mapped_instructions_verified": 110398,
+  "unique_input_instruction_bytes": 457932,
+  "functions": 1137,
+  "c_reconstructions": 1137,
+  "snapshot_sha256": "fa72706b0254dacc4c3529987ffe4a84bc1d1b190cebe240ff65772964a71911",
+  "all_checks_passed": true,
+  "limits": [
+    "Input byte identity, source mappings and inventories are verified.",
+    "Function extent and reconstructed C remain Ghidra's static analysis observations.",
+    "ARC ISA extensions, ABI and execution equivalence require separate validation.",
+    "GZF must be reopened with the same processor extension to verify portability."
+  ]
+}

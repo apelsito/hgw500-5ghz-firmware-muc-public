@@ -1,0 +1,12 @@
+block	start	end	bytes	file_bytes_offset	file_basename
+AUX_REGS	auxregs:0000	auxregs:0fff.3	16384	-1	
+muc_segment_00	ram:0039fe00	ram:0039fffb	508	340	qtn_driver.qtn_ruby.0.bin
+muc_segment_01	muc_segment_01:ffff0000	muc_segment_01:ffff000f	16	848	qtn_driver.qtn_ruby.0.bin
+muc_segment_02	ram:80020000	ram:8002fe6f	65136	864	qtn_driver.qtn_ruby.0.bin
+muc_segment_03	muc_segment_03:80020000	muc_segment_03:800206c3	1732	66000	qtn_driver.qtn_ruby.0.bin
+muc_segment_04	ram:80030000	ram:8003965f	38496	67732	qtn_driver.qtn_ruby.0.bin
+muc_segment_05	ram:6003a3c0	ram:6003eddf	18976	106228	qtn_driver.qtn_ruby.0.bin
+muc_segment_06	ram:8000f000	ram:800109bf	6592	125204	qtn_driver.qtn_ruby.0.bin
+muc_segment_07_declared_BSS	ram:8003efc0	ram:8003ffbf	4096	-1	
+muc_segment_08	ram:000e0000	ram:001cb23a	963131	131796	qtn_driver.qtn_ruby.0.bin
+muc_segment_08_declared_BSS	ram:001cb23b	ram:0039fdff	1919941	-1	

@@ -1,0 +1,97 @@
+2026-11-03 19:32:50 INFO  (LoggingInitialization) Using log config file: jar:file:/opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-11-03 19:32:50 INFO  (LoggingInitialization) Using log file: /workspace/build/evidence/ghidra-quantenna-20261103/preservation-muc-export/headless.log  
+2026-11-03 19:32:50 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-11-03 19:32:50 INFO  (Preferences) Loading user preferences: /workspace/build/.config/ghidra/ghidra_12.1.3_PUBLIC/preferences  
+2026-11-03 19:32:50 INFO  (ClassSearcher) Searching for classes...  
+2026-11-03 19:32:52 INFO  (ClassSearcher) Class search complete (1470 ms)  
+2026-11-03 19:32:52 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-11-03 19:32:52 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-11-03 19:32:52 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-11-03 19:32:52 INFO  (DefaultTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2026-11-03 19:32:54 INFO  (AnalyzeHeadless) Headless startup complete (4903 ms)  
+2026-11-03 19:32:54 INFO  (ClassSearcher) Class searcher loaded 211 extension points (114 false positives)  
+2026-11-03 19:32:55 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /workspace/OpenMitraStar/HGW500/out/ghidra-quantenna-20261103/scripts  
+2026-11-03 19:32:55 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-11-03 19:32:55 INFO  (HeadlessAnalyzer) Creating project: /workspace/build/evidence/ghidra-quantenna-20261103/preservation-muc-project/quantenna-muc  
+2026-11-03 19:32:55 INFO  (DefaultProject) Creating project: /workspace/build/evidence/ghidra-quantenna-20261103/preservation-muc-project/quantenna-muc  
+2026-11-03 19:32:55 INFO  (HeadlessAnalyzer) REPORT: Processing input files:   
+2026-11-03 19:32:55 INFO  (HeadlessAnalyzer)      project: /workspace/build/evidence/ghidra-quantenna-20261103/preservation-muc-project/quantenna-muc  
+2026-11-03 19:32:55 INFO  (HeadlessAnalyzer) IMPORTING: file:///workspace/OpenMitraStar/HGW500/firmware/radio/qtn_driver.qtn_ruby.0.bin  
+2026-11-03 19:32:55 INFO  (ProgramLoader) Successfully applied "-loader-baseAddr" to "Base Address" (old: "null", new: "0x0")  
+2026-11-03 19:32:55 INFO  (ProgramLoader) Using Loader: Raw Binary  
+2026-11-03 19:32:55 INFO  (ProgramLoader) Using Language/Compiler: ARCompact:LE:32:default:default  
+2026-11-03 19:32:55 INFO  (ProgramLoader) Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /usr/lib/x86_64-linux-gnu, /usr/lib/jni]  
+2026-11-03 19:32:56 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-11-03 19:32:56 INFO  (HeadlessAnalyzer) REPORT: Execute script: MapQuantennaCarrier.java '/workspace/OpenMitraStar/HGW500/firmware/radio/qtn_driver.qtn_ruby.0.bin' 'muc' '/workspace/build/evidence/ghidra-quantenna-20261103/preservation-muc-export'   
+2026-11-03 19:32:58 INFO  (HeadlessAnalyzer) SCRIPT: /workspace/OpenMitraStar/HGW500/out/ghidra-quantenna-20261103/scripts/MapQuantennaCarrier.java  
+2026-11-03 19:33:00 INFO  (GhidraScript) MapQuantennaCarrier.java> QUANTENNA_SEGMENTS_PRESERVED role=muc entry=ram:000e0000 sha256=71dcd32849f122c09397490914227af6f77e51c34d15615028faa3d0fabb0fe4  
+2026-11-03 19:33:00 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///workspace/OpenMitraStar/HGW500/firmware/radio/qtn_driver.qtn_ruby.0.bin  
+2026-11-03 19:33:00 DEBUG (AnalysisWorkerCommand) Invoking analysis worker (ELF Header Annotation): class ghidra.app.cmd.formats.ElfBinaryAnalysisCommand  
+2026-11-03 19:33:00 DEBUG (AutoAnalysisManager) Analysis worker completed (ELF Header Annotation): class ghidra.app.cmd.formats.ElfBinaryAnalysisCommand  
+2026-11-03 19:33:34 DEBUG (FidAnalyzer) No FID Libraries apply for language ARCompact:LE:32:default  
+2026-11-03 19:33:34 INFO  (PackedDatabaseCache) Packed database cache: /var/tmp/apelsito-ghidra/packed-db-cache  
+2026-11-03 19:33:34 DEBUG (PackedDatabaseCache) Using cached packed database: /opt/engineering/tools/ghidra_12.1.3_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib.gdt  
+2026-11-03 19:33:35 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-11-03 19:33:47 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ASCII Strings                              1.028 secs
+    Apply Data Archives                        1.338 secs
+    Basic Constant Reference Analyzer         10.103 secs
+    Call-Fixup Installer                       0.019 secs
+    Create Address Tables                      0.118 secs
+    Create Address Tables - One Time           1.310 secs
+    Create Function                            0.994 secs
+    Data Reference                             0.549 secs
+    Decompiler Switch Analysis                20.473 secs
+    Demangler GNU                              0.111 secs
+    Disassemble Entry Points                   0.002 secs
+    ELF Header Annotation                      0.008 secs
+    Embedded Media                             0.042 secs
+    External Entry References                  0.000 secs
+    Function ID                                0.029 secs
+    Non-Returning Functions - Discovered       0.264 secs
+    Reference                                  2.124 secs
+    Shared Return Calls                        0.347 secs
+    Stack                                      6.292 secs
+    Subroutine References                      2.302 secs
+    Subroutine References - One Time           0.001 secs
+-----------------------------------------------------
+     Total Time   47 secs
+-----------------------------------------------------
+  
+2026-11-03 19:33:47 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///workspace/OpenMitraStar/HGW500/firmware/radio/qtn_driver.qtn_ruby.0.bin  
+2026-11-03 19:33:47 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportQuantenna.java '/workspace/build/evidence/ghidra-quantenna-20261103/preservation-muc-export' '30'   
+2026-11-03 19:33:48 INFO  (HeadlessAnalyzer) SCRIPT: /workspace/OpenMitraStar/HGW500/out/ghidra-quantenna-20261103/scripts/ExportQuantenna.java  
+2026-11-03 19:34:24 WARN  (DecompileCallback) Decompiling ram:8002565c, pcode error at ram:00025ac4: Could not follow disassembly flow into non-existing memory at ram:00025ac4  
+2026-11-03 19:34:24 WARN  (DecompileCallback) Decompiling ram:80025dec, pcode error at ram:00025e14: Could not follow disassembly flow into non-existing memory at ram:00025e14  
+2026-11-03 19:34:25 INFO  (GhidraScript) ExportQuantenna.java> QUANTENNA_EXPORTED functions=1137 C=1137 instructions=110398 byte_mismatches=0  
+2026-11-03 19:34:25 INFO  (HeadlessAnalyzer) REPORT: Execute script: SnapshotQuantenna.java '/workspace/build/evidence/ghidra-quantenna-20261103/preservation-muc-export/ghidra-snapshot.json'   
+2026-11-03 19:34:25 INFO  (HeadlessAnalyzer) SCRIPT: /workspace/OpenMitraStar/HGW500/out/ghidra-quantenna-20261103/scripts/SnapshotQuantenna.java  
+2026-11-03 19:34:28 INFO  (GhidraScript) SnapshotQuantenna.java> Canonical read-only snapshot exported  
+2026-11-03 19:34:28 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///workspace/OpenMitraStar/HGW500/firmware/radio/qtn_driver.qtn_ruby.0.bin  
+2026-11-03 19:34:28 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///workspace/OpenMitraStar/HGW500/firmware/radio/qtn_driver.qtn_ruby.0.bin  
+2026-11-03 19:34:28 INFO  (LocalFileSystem) /qtn_driver.qtn_ruby.0.bin: file created (apelsito)  
+2026-11-03 19:34:29 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /qtn_driver.qtn_ruby.0.bin (quantenna-muc:/qtn_driver.qtn_ruby.0.bin)  
+2026-11-03 19:34:29 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  

@@ -1,0 +1,32 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARCompact
+  Version:                           0x1
+  Entry point address:               0xe0000
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          0 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         9
+  Size of section headers:           40 (bytes)
+  Number of section headers:         0
+  Section header string table index: 0
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x000154 0x0039fe00 0x00000000 0x001fc 0x001fc R E 0x1000
+  LOAD           0x000350 0xffff0000 0x00000000 0x00010 0x00010 RW  0x1000
+  LOAD           0x000360 0x80020000 0x00000000 0x0fe70 0x0fe70 RWE 0x1000
+  LOAD           0x0101d0 0x80020000 0x0046e004 0x006c4 0x006c4 R E 0x1000
+  LOAD           0x010894 0x80030000 0x00000000 0x09660 0x09660 RWE 0x1000
+  LOAD           0x019ef4 0x6003a3c0 0x8003a3c0 0x04a20 0x04a20 R   0x1000
+  LOAD           0x01e914 0x8000f000 0x00000000 0x019c0 0x019c0 RW  0x1000
+  LOAD           0x01e914 0x8003efc0 0x00000000 0x00000 0x01000 RW  0x1000
+  LOAD           0x0202d4 0x000e0000 0x00000000 0xeb23b 0x2bfe00 RWE 0x10000

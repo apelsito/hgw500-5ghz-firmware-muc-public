@@ -1,0 +1,27 @@
+; Ghidra ARC instruction reconstruction. Addresses and bytes are preserved below.
+; function FUN_ram_0010f89c entry ram:0010f89c
+ram:0010f89c	fc1c48b3	st.aw r13,[sp,-0x4]
+ram:0010f8a0	00160770180004c1	ld r7,[0x18c104]
+ram:0010f8a8	3020820f00000804	ld r2,[r0, 0x408]
+ram:0010f8b0	3220860f00008306	ldb r6,[r0, 0x683]
+ram:0010f8b8	210f3100	brne.d r7,0x0,0x0010f8d8
+ram:0010f8bc	0a25c017	_mov r13,blink
+ram:0010f8c0	00160170180018c1	ld r1,[0x18c118]
+ram:0010f8c8	29098500	brhs r1,r2,0x0010f8f0
+ram:0010f8cc	2f214700	extb r1,r1
+ram:0010f8d0	39098001	breq r1,r6,0x0010f908
+ram:0010f8d4	25000000	b 0x0010f8f8
+ram:0010f8d8	00160370180008c1	ld r3,[0x18c108]
+ram:0010f8e0	e10ac480	brlo r2,r3,0x0010f8c0
+ram:0010f8e4	2f23c700	extb r3,r3
+ram:0010f8e8	210b8001	breq r3,r6,0x0010f908
+ram:0010f8ec	0d000000	b 0x0010f8f8
+ram:0010f8f0	2f228700	extb r2,r2
+ram:0010f8f4	150a8001	breq r2,r6,0x0010f908
+ram:0010f8f8	3020840f0000c004	ld r4,[r0, 0x4c0]
+ram:0010f900	14140500	ld r5,[r4,0x14]
+ram:0010f904	22204001	jl [r5]
+ram:0010f908	0a274033	mov blink,r13
+ram:0010f90c	4a260070	nop
+ram:0010f910	2120c007	j.d [blink]
+ram:0010f914	04140d34	_ld.ab r13,[sp,0x4]

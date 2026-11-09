@@ -1,0 +1,18 @@
+{
+  "schema": "openmitrastar.ghidra-quantenna-export/v1",
+  "language": "ARCompact:LE:32:default",
+  "compiler": "default",
+  "blocks": 11,
+  "functions": 1137,
+  "instructions": 110398,
+  "file_mapped_instructions": 110398,
+  "instruction_byte_mismatches": 0,
+  "decompiled_functions": 1137,
+  "decompile_failures": 0,
+  "snapshot": "quantenna-analysis.gzf",
+  "snapshot_sha256": "fa72706b0254dacc4c3529987ffe4a84bc1d1b190cebe240ff65772964a71911",
+  "target_executed": false,
+  "hardware_accessed": false,
+  "roundtrip_matches": true,
+  "source_sha256": "71dcd32849f122c09397490914227af6f77e51c34d15615028faa3d0fabb0fe4"
+}

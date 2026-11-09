@@ -1,0 +1,12 @@
+block	space	start	length	file_offset	source_name	source_description
+muc_segment_08	ram	0xe0000	963131	131796	qtn_driver.qtn_ruby.0.bin	qtn_driver.qtn_ruby.0.bin[0x202d4, 0xeb23b]
+muc_segment_08_declared_BSS	ram	0x1cb23b	1919941	-1		uninit[0x1d4bc5]
+muc_segment_00	ram	0x39fe00	508	340	qtn_driver.qtn_ruby.0.bin	qtn_driver.qtn_ruby.0.bin[0x154, 0x1fc]
+muc_segment_05	ram	0x6003a3c0	18976	106228	qtn_driver.qtn_ruby.0.bin	qtn_driver.qtn_ruby.0.bin[0x19ef4, 0x4a20]
+muc_segment_06	ram	0x8000f000	6592	125204	qtn_driver.qtn_ruby.0.bin	qtn_driver.qtn_ruby.0.bin[0x1e914, 0x19c0]
+muc_segment_02	ram	0x80020000	65136	864	qtn_driver.qtn_ruby.0.bin	qtn_driver.qtn_ruby.0.bin[0x360, 0xfe70]
+muc_segment_04	ram	0x80030000	38496	67732	qtn_driver.qtn_ruby.0.bin	qtn_driver.qtn_ruby.0.bin[0x10894, 0x9660]
+muc_segment_07_declared_BSS	ram	0x8003efc0	4096	-1		uninit[0x1000]
+AUX_REGS	auxregs	0x0	16384	-1		uninit[0x4000]
+muc_segment_01	muc_segment_01	0xffff0000	16	848	qtn_driver.qtn_ruby.0.bin	qtn_driver.qtn_ruby.0.bin[0x350, 0x10]
+muc_segment_03	muc_segment_03	0x80020000	1732	66000	qtn_driver.qtn_ruby.0.bin	qtn_driver.qtn_ruby.0.bin[0x101d0, 0x6c4]

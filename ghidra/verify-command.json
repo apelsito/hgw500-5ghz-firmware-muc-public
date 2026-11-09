@@ -1,0 +1,12 @@
+[
+  "python3",
+  "/workspace/OpenMitraStar/HGW500/out/ghidra-quantenna-20261103/scripts/verify_export.py",
+  "--role",
+  "muc",
+  "--original",
+  "/workspace/OpenMitraStar/HGW500/firmware/radio/qtn_driver.qtn_ruby.0.bin",
+  "--export",
+  "/workspace/build/evidence/ghidra-quantenna-20261103/preservation-muc-export",
+  "--output",
+  "/workspace/build/evidence/ghidra-quantenna-20261103/preservation-muc-export/byte-verification.json"
+]

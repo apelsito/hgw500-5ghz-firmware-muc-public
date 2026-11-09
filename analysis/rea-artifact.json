@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/usr/local/bin/rea",
+    "inspect-artifact",
+    "/workspace/build/evidence/hgw500-quantenna-firmwares-20261103/run1/muc/qtn_driver.qtn_ruby.0.bin",
+    "--format",
+    "json"
+  ],
+  "returncode": 1,
+  "result": {
+    "error": "Analysis failed",
+    "code": "target_unavailable",
+    "category": "unsupported_target",
+    "message": "Cannot open artifact: unsupported ELF architecture.",
+    "retryable": false,
+    "remediation": {
+      "action": "Review the reported file-format reason and select a supported, well-formed target."
+    },
+    "details": {
+      "path": "/workspace/build/evidence/hgw500-quantenna-firmwares-20261103/run1/muc/qtn_driver.qtn_ruby.0.bin",
+      "reason": "unsupported ELF architecture",
+      "constraint": "file_format_rejected"
+    }
+  },
+  "stdout_file": "rea-artifact.stdout",
+  "stderr_file": "rea-artifact.stderr"
+}

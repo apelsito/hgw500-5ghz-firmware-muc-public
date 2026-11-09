@@ -1,0 +1,3 @@
+path	kind	fields
+/pointer	pointer	
+/undefined *	pointer	/undefined

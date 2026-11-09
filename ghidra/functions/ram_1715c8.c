@@ -1,0 +1,83 @@
+/* Ghidra pseudocode derived from OEM firmware. */
+/* language ARCompact:LE:32:default; entry ram:001715c8 */
+
+void FUN_ram_001715c8(void)
+
+{
+  undefined1 uVar1;
+  int iVar2;
+  undefined4 uVar3;
+  
+  iVar2 = FUN_ram_0017fbc0();
+  uVar3 = FUN_ram_00183c8c();
+  FUN_ram_001710d0(0x2a0,0xc,2,3);
+  DAT_ram_0018c1cd = 3;
+  FUN_ram_001710d0(0x280,0x1c00,10,2);
+  FUN_ram_001710d0(0x270,0xe00000,0x15,5);
+  FUN_ram_001710d0(0x280,0x100,8,1);
+  FUN_ram_001710d0(0x280,0x80,7,0);
+  FUN_ram_001710d0(0x280,0xf,0,0xf);
+  FUN_ram_001710d0(0x264,3,0,3);
+  FUN_ram_001710d0(0x268,0x10,4,1);
+  FUN_ram_001710d0(0x264,0xc00,10,3);
+  FUN_ram_001710d0(0x260,0xc00,10,3);
+  FUN_ram_001710d0(0x278,0xe00,9,7);
+  FUN_ram_001710d0(0x260,0x3000,0xc,0);
+  FUN_ram_001710d0(0x270,0xff00,8,0xe0);
+  FUN_ram_001710d0(0x270,0xff,0,0xe0);
+  FUN_ram_001710d0(0x2b4,0x1000,0xc,1);
+  FUN_ram_001710d0(0x2b4,0x3e000,0xd,0x10);
+  FUN_ram_001710d0(0x298,0x1c000,0xe,1);
+  DAT_ram_0018c1cc = 1;
+  FUN_ram_001710d0(0x2a8,0xf,0,*(undefined1 *)(iVar2 + 0x1b));
+  FUN_ram_001710d0(0x2a8,0x30,4,*(undefined1 *)(iVar2 + 0x1c));
+  FUN_ram_001710d0(0x2a8,0xc0,6,*(undefined1 *)(iVar2 + 0x1d));
+  FUN_ram_001710d0(0x2a8,0xf000,0xc,*(undefined1 *)(iVar2 + 0x1b));
+  FUN_ram_001710d0(0x2a8,0x30000,0x10,*(undefined1 *)(iVar2 + 0x1c));
+  FUN_ram_001710d0(0x2a8,0xc0000,0x12,*(undefined1 *)(iVar2 + 0x1d));
+  FUN_ram_001710d0(0x2ac,0xf,0,*(undefined1 *)(iVar2 + 0x1b));
+  FUN_ram_001710d0(0x2ac,0x30,4,*(undefined1 *)(iVar2 + 0x1c));
+  FUN_ram_001710d0(0x2ac,0xc0,6,*(undefined1 *)(iVar2 + 0x1d));
+  FUN_ram_001710d0(0x2ac,0xf000,0xc,*(undefined1 *)(iVar2 + 0x1b));
+  FUN_ram_001710d0(0x2ac,0x30000,0x10,*(undefined1 *)(iVar2 + 0x1c));
+  FUN_ram_001710d0(0x2ac,0xc0000,0x12,*(undefined1 *)(iVar2 + 0x1d));
+  FUN_ram_000ee260(s_rf_optimizing_rf_register_map__s_ram_001c96d8);
+  FUN_ram_001710d0(0x280,0x800000,0x17,1);
+  FUN_ram_001710d0(0x240,0xc0000,0x12,0);
+  FUN_ram_001710d0(0x21c,0x200,9,1);
+  FUN_ram_001710d0(0x240,0x30000,0x10,0);
+  FUN_ram_001710d0(0x21c,0x100,8,1);
+  FUN_ram_001710d0(0x240,0xc000,0xe,3);
+  FUN_ram_001710d0(0x21c,0x80,7,1);
+  FUN_ram_001710d0(0x244,0x30000,0x10,0);
+  FUN_ram_001710d0(0x21c,0x100000,0x14,1);
+  FUN_ram_001710d0(0x244,0xc000,0xe,3);
+  FUN_ram_001710d0(0x21c,0x80000,0x13,1);
+  FUN_ram_001710d0(0x248,0x30000,0x10,0);
+  FUN_ram_001710d0(0x220,0x100,8,1);
+  FUN_ram_001710d0(0x248,0xc000,0xe,3);
+  FUN_ram_001710d0(0x220,0x80,7,1);
+  FUN_ram_001710d0(0x24c,0x30000,0x10,0);
+  FUN_ram_001710d0(0x220,0x100000,0x14,1);
+  FUN_ram_001710d0(0x24c,0xc000,0xe,3);
+  FUN_ram_001710d0(0x220,0x80000,0x13,1);
+  FUN_ram_001710d0(0x2b8,3,0,3);
+  FUN_ram_001710d0(0x250,0xffffff,0,&DAT_ram_00300030);
+  FUN_ram_001710d0(0x254,0xffffff,0,&DAT_ram_00300030);
+  FUN_ram_001710d0(600,0x3fffff,0,&DAT_ram_00300030);
+  FUN_ram_001710d0(0x25c,0x3fffff,0,&DAT_ram_00300030);
+  uVar1 = FUN_ram_001711e0(0x14,0xf,0);
+  FUN_ram_001710d0(0x214,0xf000,0xc,uVar1);
+  FUN_ram_001710d0(0x214,0xf00,8,uVar1);
+  FUN_ram_001710d0(0x214,0xf0,4,uVar1);
+  FUN_ram_001710d0(0x214,0xf,0,uVar1);
+  FUN_ram_001710d0(0x218,0xf000,0xc,uVar1);
+  FUN_ram_001710d0(0x218,0xf00,8,uVar1);
+  FUN_ram_001710d0(0x218,0xf0,4,uVar1);
+  FUN_ram_001710d0(0x218,0xf,0,uVar1);
+  FUN_ram_001710d0(0x21c,0x200,9,1);
+  FUN_ram_00183cd0(uVar3);
+  return;
+}
+
+

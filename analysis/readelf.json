@@ -1,0 +1,12 @@
+{
+  "command": [
+    "readelf",
+    "-h",
+    "-l",
+    "/workspace/build/evidence/hgw500-quantenna-firmwares-20261103/run1/muc/qtn_driver.qtn_ruby.0.bin"
+  ],
+  "returncode": 0,
+  "result": null,
+  "stdout_file": "readelf.stdout",
+  "stderr_file": "readelf.stderr"
+}

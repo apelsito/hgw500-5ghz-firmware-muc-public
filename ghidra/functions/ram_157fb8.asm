@@ -1,0 +1,65 @@
+; Ghidra ARC instruction reconstruction. Addresses and bytes are preserved below.
+; function FUN_ram_00157fb8 entry ram:00157fb8
+ram:00157fb8	e1c5	push_s r13
+ram:00157fba	a2c1	sub_s sp,sp,0x8
+ram:00157fbc	0a22801f18004cc2	mov r10,0x18c24c
+ram:00157fc4	10120b10	ld r11,[r10,0x10]
+ram:00157fc8	0a25c017	mov r13,blink
+ram:00157fcc	4c230090	cmp r11,0x0
+ram:00157fd0	24002100	beq.d 0x00157ff4
+ram:00157fd4	ca206100	_mov.eq r0,0x1
+ram:00157fd8	00120211	ldh r2,[r10]
+ram:00157fdc	3220810f00007c06	ldb r1,[r0, 0x67c]
+ram:00157fe4	210a1000	breq r2,0x0,0x00158004
+ram:00157fe8	0ad8	mov_s r0,0xa
+ram:00157fea	00db	mov_s r3,0x0
+ram:00157fec	c20b2fff	bl.d 0x001563ac
+ram:00157ff0	4a244000	_mov r4,0x1
+ram:00157ff4	0a274033	mov blink,r13
+ram:00157ff8	40241c32	add sp,sp,0x8
+ram:00157ffc	2120c007	j.d [blink]
+ram:00158000	04140d34	_ld.ab r13,[sp,0x4]
+ram:00158004	0a20801f1a0064a5	mov r8,0x1aa564
+ram:0015800c	1c100910	ld r9,[r8,0x1c]
+ram:00158010	20100511	ldh r5,[r8,0x20]
+ram:00158014	4a240000	mov r4,0x0
+ram:00158018	001c4032	st r9,[sp]
+ram:0015801c	041c4431	sth r5,[sp,0x4]
+ram:00158020	8872	mov_s r2,r4
+ram:00158022	32240631	ldb r6,[sp, r4]
+ram:00158026	40244400	add r4,r4,0x1
+ram:0015802a	2f240701	extb r4,r4
+ram:0015802e	0f228701	bset r7,r2,r6
+ram:00158032	2f22c801	extw r2,r7
+ram:00158036	001ac411	sth r7,[r10]
+ram:0015803a	32240631	ldb r6,[sp, r4]
+ram:0015803e	40244400	add r4,r4,0x1
+ram:00158042	2f240701	extb r4,r4
+ram:00158046	0f228701	bset r7,r2,r6
+ram:0015804a	2f22c801	extw r2,r7
+ram:0015804e	001ac411	sth r7,[r10]
+ram:00158052	32240631	ldb r6,[sp, r4]
+ram:00158056	40244400	add r4,r4,0x1
+ram:0015805a	2f240701	extb r4,r4
+ram:0015805e	0f228701	bset r7,r2,r6
+ram:00158062	2f22c801	extw r2,r7
+ram:00158066	001ac411	sth r7,[r10]
+ram:0015806a	32240631	ldb r6,[sp, r4]
+ram:0015806e	40244400	add r4,r4,0x1
+ram:00158072	2f240701	extb r4,r4
+ram:00158076	0f228701	bset r7,r2,r6
+ram:0015807a	2f22c801	extw r2,r7
+ram:0015807e	001ac411	sth r7,[r10]
+ram:00158082	32240631	ldb r6,[sp, r4]
+ram:00158086	40244400	add r4,r4,0x1
+ram:0015808a	2f240701	extb r4,r4
+ram:0015808e	0f228701	bset r7,r2,r6
+ram:00158092	2f22c801	extw r2,r7
+ram:00158096	001ac411	sth r7,[r10]
+ram:0015809a	32240631	ldb r6,[sp, r4]
+ram:0015809e	40244400	add r4,r4,0x1
+ram:001580a2	2f240701	extb r4,r4
+ram:001580a6	0f228701	bset r7,r2,r6
+ram:001580aa	2f22c801	extw r2,r7
+ram:001580ae	001ac411	sth r7,[r10]
+ram:001580b2	9cf1	b_s 0x00157fe8
